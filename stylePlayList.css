@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: #10101E;
+}
+.container{
+    width: 100vw;
+    height: 89vh;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:50px 1fr 1fr 100px;
+    gap: 10px;
+    padding: 3px;
+    box-sizing: border-box;
+   
+}
+.container div{
+    padding: 10px;
+    border: 3px solid  #2E94E3;
+    border-radius: 30px;
+    background: #10101E;
+}
+.centent-r{
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    grid-column: 6;
+}
+.centent-l:hover{
+     background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+.centent-r:hover{
+     background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+.centent-l{
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    grid-column: 4;
+}
+.footer{
+    grid-column:1  /span 8;
+}
+.footer:hover{
+     background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+.datetime{
+  color: #fff;
+  background: #10101E;
+  font-family: "Segoe UI", sans-serif;
+  width: 310px;
+  border: 3px solid #2E94E3;
+  border-radius: 30px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property:box-shadow;
+  float: left;
+}
+
+.datetime:hover{
+  background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+.date{
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child{
+  background: #2E94E3;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.numbre{
+	font-size: 30px;
+	display: flex;
+	color: #fff;
+	width:50px ;
+	height:35px ;
+	border-radius: 30px;
+	align-items: center;
+	float: right;
+}
+.numbre:hover{
+     background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+button{
+	color: honeydew;
+	font-size: 50px;
+	border-radius: 30px;
+	background-color:#2E94E3;
+	
+}
+.btn {
+	width:200px;
+	height: 70px;
+	display: block;
+	align-items: center;
+	margin-left: 45%;
+}
+button:hover{
+     background:  #FF8A65;
+  box-shadow: 0 0 30px  #FF8A65;
+}
+.top{
+	margin-bottom: -100px;
+}
